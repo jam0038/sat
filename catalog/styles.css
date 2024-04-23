@@ -4,6 +4,7 @@ body {
     font-family: Arial, sans-serif;
     background: linear-gradient(to bottom right, #c6fbff, #68d4cf, #70d3ec, #1dcaff, #a5f1ff, #91f3fa);
     animation: rainbow 20s infinite linear;
+    min-width: 75%;
   }
   
   .frame-form {
