@@ -16,7 +16,6 @@ body {
     margin: 0 auto; 
     width: 80%; 
     max-width: 1400px; 
-    height: 80%;
   }
   
   .frame-container {
@@ -24,7 +23,6 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    max-height: 100vh;
   }
   
   .frame-form:hover {
