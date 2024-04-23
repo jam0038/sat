@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #c6fbff, #68d4cf, #70d3ec, #1dcaff, #a5f1ff, #91f3fa);
+    animation: rainbow 20s infinite linear;
+  }
+  
+  .frame-form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    margin: 0 auto; /* Center the form horizontally */
+    width: 80%; /* Set width to 80% of the viewport */
+    max-width: 1400px; /* Set a max-width for better readability */
+  }
+  
+  .frame-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Change height to min-height */
+  }
+  
+  .frame-form:hover {
+    transform: translate(0);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Adding box shadow on hover */
+    transition: box-shadow 0.3s ease; /* Adding transition effect to box-shadow property */
+  }
+  
+  .extra-frame {
+    position: absolute;
+    bottom: 10px; /* Adjust vertical position */
+    right: 10px; /* Adjust horizontal position */
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    font-size: 12px;
+  }
+  
+  hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)); /* Stronger gradient */
+    margin: 20px 0;
+  }
+  
+  .slots {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 20px;
+    gap: 20px;
+  }
+  
+  .slot {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: relative;
+    flex: 0 0 calc(10% - 20px);
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 120px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  
+  .slot:hover {
+    transform: translateY(-15px); /* Translate up when hovered */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Adding box shadow on hover */
+  }
+  
+  /* Added overlay styles */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 1; /* Ensure the overlay is above the image */
+  }
+  
+  
+  
+  .item-img {
+    max-width: 80%; /* Set maximum width to 80% of the slot */
+    max-height: 80%; /* Set maximum height to 80% of the slot */
+    display: block; /* Ensure the image behaves as a block element */
+    margin: auto; /* Center the image horizontally and vertically */
+    padding: 10%; /* Add padding around the image */
+    position: absolute; /* Position the image absolutely within the slot */
+    top: 0; /* Align the top of the image to the top of the slot */
+    bottom: 0; /* Align the bottom of the image to the bottom of the slot */
+    left: 0; /* Align the left of the image to the left of the slot */
+    right: 0; /* Align the right of the image to the right of the slot */
+  }
+  
+  
+  /* Modal styles */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 10px;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+
