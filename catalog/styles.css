@@ -12,28 +12,28 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
-    margin: 0 auto; /* Center the form horizontally */
-    width: 80%; /* Set width to 80% of the viewport */
-    max-width: 1400px; /* Set a max-width for better readability */
+    margin: 0 auto; 
+    width: 80%; 
+    max-width: 1400px; 
   }
   
   .frame-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Change height to min-height */
+    min-height: 100vh; 
   }
   
   .frame-form:hover {
     transform: translate(0);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Adding box shadow on hover */
-    transition: box-shadow 0.3s ease; /* Adding transition effect to box-shadow property */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+    transition: box-shadow 0.3s ease; 
   }
   
   .extra-frame {
     position: absolute;
-    bottom: 10px; /* Adjust vertical position */
-    right: 10px; /* Adjust horizontal position */
+    bottom: 10px; 
+    right: 10px; 
     background-color: rgba(255, 255, 255, 0.8);
     padding: 5px 10px;
     border-radius: 5px;
@@ -44,7 +44,7 @@ body {
   hr {
     border: none;
     height: 2px;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)); /* Stronger gradient */
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)); 
     margin: 20px 0;
   }
   
@@ -57,9 +57,9 @@ body {
   }
   
   .slot {
-    display: flex; /* Use flexbox */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
     position: relative;
     flex: 0 0 calc(10% - 20px);
     background-color: rgba(255, 255, 255, 0.3);
@@ -72,11 +72,11 @@ body {
   
   
   .slot:hover {
-    transform: translateY(-15px); /* Translate up when hovered */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Adding box shadow on hover */
+    transform: translateY(-15px); 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
   }
   
-  /* Added overlay styles */
+
   .overlay {
     position: absolute;
     top: 0;
@@ -84,26 +84,26 @@ body {
     width: 100%;
     height: 100%;
     cursor: pointer;
-    z-index: 1; /* Ensure the overlay is above the image */
+    z-index: 1; 
   }
   
   
   
   .item-img {
-    max-width: 80%; /* Set maximum width to 80% of the slot */
-    max-height: 80%; /* Set maximum height to 80% of the slot */
-    display: block; /* Ensure the image behaves as a block element */
-    margin: auto; /* Center the image horizontally and vertically */
-    padding: 10%; /* Add padding around the image */
-    position: absolute; /* Position the image absolutely within the slot */
-    top: 0; /* Align the top of the image to the top of the slot */
-    bottom: 0; /* Align the bottom of the image to the bottom of the slot */
-    left: 0; /* Align the left of the image to the left of the slot */
-    right: 0; /* Align the right of the image to the right of the slot */
+    max-width: 80%; 
+    max-height: 80%; 
+    display: block; 
+    margin: auto; 
+    padding: 10%; 
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
   }
   
   
-  /* Modal styles */
+
   .modal {
     display: none;
     position: fixed;
