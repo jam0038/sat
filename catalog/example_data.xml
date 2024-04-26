@@ -2,162 +2,162 @@
 <catalog>
   <item name="Item 1">
     <description>This is the description for Item 1.</description>
-    <price>$10</price>
+    <price>10</price>
   </item>
   <item name="Item 2">
     <description>This is the description for Item 2.</description>
-    <price>$15</price>
+    <price>15</price>
   </item>
   <item name="Item 3">
     <description>This is the description for Item 3.</description>
-    <price>$20</price>
+    <price>20</price>
   </item>
   <item name="Item 4">
     <description>This is the description for Item 4.</description>
-    <price>$25</price>
+    <price>25</price>
   </item>
   <item name="Item 5">
     <description>This is the description for Item 5.</description>
-    <price>$30</price>
+    <price>30</price>
   </item>
   <item name="Item 6">
     <description>This is the description for Item 6.</description>
-    <price>$35</price>
+    <price>35</price>
   </item>
   <item name="Item 7">
     <description>This is the description for Item 7.</description>
-    <price>$40</price>
+    <price>40</price>
   </item>
   <item name="Item 8">
     <description>This is the description for Item 8.</description>
-    <price>$45</price>
+    <price>45</price>
   </item>
   <item name="Item 9">
     <description>This is the description for Item 9.</description>
-    <price>$50</price>
+    <price>50</price>
   </item>
   <item name="Item 10">
     <description>This is the description for Item 10.</description>
-    <price>$55</price>
+    <price>55</price>
   </item>
   <item name="Item 11">
     <description>This is the description for Item 11.</description>
-    <price>$60</price>
+    <price>60</price>
   </item>
   <item name="Item 12">
     <description>This is the description for Item 12.</description>
-    <price>$65</price>
+    <price>65</price>
   </item>
   <item name="Item 13">
     <description>This is the description for Item 13.</description>
-    <price>$70</price>
+    <price>70</price>
   </item>
   <item name="Item 14">
     <description>This is the description for Item 14.</description>
-    <price>$75</price>
+    <price>75</price>
   </item>
   <item name="Item 15">
     <description>This is the description for Item 15.</description>
-    <price>$80</price>
+    <price>80</price>
   </item>
   <item name="Item 16">
     <description>This is the description for Item 16.</description>
-    <price>$85</price>
+    <price>85</price>
   </item>
   <item name="Item 17">
     <description>This is the description for Item 17.</description>
-    <price>$90</price>
+    <price>90</price>
   </item>
   <item name="Item 18">
     <description>This is the description for Item 18.</description>
-    <price>$95</price>
+    <price>95</price>
   </item>
   <item name="Item 19">
     <description>This is the description for Item 19.</description>
-    <price>$100</price>
+    <price>100</price>
   </item>
   <item name="Item 20">
     <description>This is the description for Item 20.</description>
-    <price>$105</price>
+    <price>105</price>
   </item>
   <item name="Item 21">
     <description>This is the description for Item 21.</description>
-    <price>$110</price>
+    <price>110</price>
   </item>
   <item name="Item 22">
     <description>This is the description for Item 22.</description>
-    <price>$115</price>
+    <price>115</price>
   </item>
   <item name="Item 23">
     <description>This is the description for Item 23.</description>
-    <price>$120</price>
+    <price>120</price>
   </item>
   <item name="Item 24">
     <description>This is the description for Item 24.</description>
-    <price>$125</price>
+    <price>125</price>
   </item>
   <item name="Item 25">
     <description>This is the description for Item 25.</description>
-    <price>$130</price>
+    <price>130</price>
   </item>
   <item name="Item 26">
     <description>This is the description for Item 26.</description>
-    <price>$135</price>
+    <price>135</price>
   </item>
   <item name="Item 27">
     <description>This is the description for Item 27.</description>
-    <price>$140</price>
+    <price>140</price>
   </item>
   <item name="Item 28">
     <description>This is the description for Item 28.</description>
-    <price>$145</price>
+    <price>145</price>
   </item>
   <item name="Item 29">
     <description>This is the description for Item 29.</description>
-    <price>$150</price>
+    <price>150</price>
   </item>
   <item name="Item 30">
     <description>This is the description for Item 30.</description>
-    <price>$155</price>
+    <price>155</price>
   </item>
   <item name="Item 31">
     <description>This is the description for Item 31.</description>
-    <price>$160</price>
+    <price>160</price>
   </item>
   <item name="Item 32">
     <description>This is the description for Item 32.</description>
-    <price>$165</price>
+    <price>165</price>
   </item>
   <item name="Item 33">
     <description>This is the description for Item 33.</description>
-    <price>$170</price>
+    <price>170</price>
   </item>
   <item name="Item 34">
     <description>This is the description for Item 34.</description>
-    <price>$175</price>
+    <price>175</price>
   </item>
   <item name="Item 35">
     <description>This is the description for Item 35.</description>
-    <price>$180</price>
+    <price>180</price>
   </item>
   <item name="Item 36">
     <description>This is the description for Item 36.</description>
-    <price>$185</price>
+    <price>185</price>
   </item>
   <item name="Item 37">
     <description>This is the description for Item 37.</description>
-    <price>$190</price>
+    <price>190</price>
   </item>
   <item name="Item 38">
     <description>This is the description for Item 38.</description>
-    <price>$195</price>
+    <price>195</price>
   </item>
   <item name="Item 39">
     <description>This is the description for Item 39.</description>
-    <price>$200</price>
+    <price>200</price>
   </item>
   <item name="Item 40">
     <description>This is the description for Item 40.</description>
-    <price>$205</price>
+    <price>205</price>
   </item>
 </catalog>

@@ -1,7 +1,6 @@
 var images = ['2.jpg', 'image2.jpg', 'image3.jpg', 'image4.jpg', 'image5.jpg', 'image6.jpg', 'image7.jpg', 'image8.jpg', 'image9.jpg', 'image10.jpg',
                 'image11.jpg', 'image12.jpg', 'image13.jpg', 'image14.jpg', 'image15.jpg', 'image16.jpg'];
 
-function setImages() {
   var slots = document.querySelectorAll('.slot');
   slots.forEach(function(slot, index) {
     var img = new Image(); // Create a new Image element
@@ -11,9 +10,7 @@ function setImages() {
     slot.appendChild(img); // Append the image to the slot
     slot.querySelector('.overlay').setAttribute('onclick', 'showItemInfo("Item ' + (index + 1) + '")'); // Set onclick attribute for overlay
   });
-}
 
-window.onload = setImages;
 
 function showItemInfo(itemName) {
   var modal = document.getElementById("myModal");
@@ -26,7 +23,7 @@ function showItemInfo(itemName) {
       // Parse XML
       var parser = new DOMParser();
       var xmlDoc = parser.parseFromString(data, 'text/xml');
-      
+
       // Find item node with corresponding name
       var itemNode = xmlDoc.querySelector('item[name="' + itemName + '"]');
       if (itemNode) {
@@ -34,7 +31,28 @@ function showItemInfo(itemName) {
         var itemPrice = itemNode.querySelector('price').textContent;
 
         // Update modal content with item information
-        itemInfoContainer.innerHTML = "<h2>" + itemName + "</h2><p>Description: " + itemDescription + "</p><p>Price: " + itemPrice + "</p>";
+        itemInfoContainer.innerHTML = "<h2>" + itemName + "</h2><p>Description: " + itemDescription + "</p><p>Price: $" + itemPrice + "</p>";
+        var btn = document.createElement('button')
+        btn.innerHTML = "Buy"
+        var bal = parseFloat(localStorage.getItem('balance'))
+        if (bal < itemPrice) btn.disabled = true
+        btn.addEventListener("click", () => {
+          if (bal < itemPrice) {
+            btn.disabled = true
+            return
+          }
+          bal -= itemPrice
+          localStorage.setItem('balance', bal)
+          var balanceElement = document.getElementById('balance');
+          balanceElement.textContent = "Balance: " + bal;
+          if (bal < itemPrice || bal < 0) {
+            bal = 0;
+
+            btn.disabled = true
+            return
+          }
+        })
+        itemInfoContainer.appendChild(btn)
       } else {
         itemInfoContainer.innerHTML = "<h2>Item not found</h2>";
       }

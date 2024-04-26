@@ -8,7 +8,7 @@ body {
 
 @keyframes greenGradient {
   0% { background-color: #00e1ff; } 
-  100% { background-color: #0011fa; } 
+  100% { background-color: #00b3fa; } 
 }
 
 
@@ -30,6 +30,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  text-align: center;
 }
 
 
@@ -53,7 +54,7 @@ input[type="password"] {
   border-radius: 5px;
 }
 
-button[type="submit"] {
+button[type="submit"]  {
   width: 100%;
   padding: 10px;
   margin-top: 10px;
@@ -93,4 +94,18 @@ img {
   max-height: 100%; 
   padding: 10px; 
   box-sizing: border-box;
+}
+
+button  {
+  width: 50%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #ffffff; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  animation: greenGradient 5s infinite alternate;
+
 }
