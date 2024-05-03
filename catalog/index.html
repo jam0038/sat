@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.75, maximum-scale=0.75">
+  <link rel="stylesheet" href="styles.css">
+  <title>Catalog Page</title> 
+</head>
+<body>
+  <div class="header-form">
+    <p id="balance">Balance: </p>
+    <button class="cart_button" id="click_cart">Cart</button>
+    <input type="number" id="newBalance">
+    <button class="cart_button" onclick="setBalance()">Set Balance</button>
+  </div>
+
+<div class="frame-container">
+  <form class="frame-form">
+    <div class="extra-frame" id="extra-frame">Made by Mohammad</div>
+    <h2 style="margin-bottom: 20px;">Catalog Store</h2>
+    <hr>
+    <div class="slots">
+      <div class="slot">
+        <img class="item-img" src="" alt="">
+        <div class="overlay" onclick="showItemInfo('Item 1')"></div>
+      </div>
+      <div class="slot">
+        <img class="item-img" src="" alt="">
+        <div class="overlay" onclick="showItemInfo('Item 2')"></div>
+      </div>
+      <div class="slot">
+        <img class="item-img" src="" alt="">
+        <div class="overlay" onclick="showItemInfo('Item 3')"></div>
+      </div>
+      <div class="slot">
+        <img class="item-img" src="" alt="">
+        <div class="overlay" onclick="showItemInfo('Item 4')"></div>
+      </div>
+      <div class="slot">
+        <img class="item-img" src="" alt="">
+        <div class="overlay" onclick="showItemInfo('Item 5')"></div>
+      </div>
+      <div class="slot">
+        <img class="item-img" src="" alt="">
+        <div class="overlay" onclick="showItemInfo('Item 6')"></div>
+      </div>
+      <div class="slot">
+        <img class="item-img" src="" alt="">
+        <div class="overlay" onclick="showItemInfo('Item 7')"></div>
+      </div>
+      <div class="slot">
+        <img class="item-img" src="" alt="">
+        <div class="overlay" onclick="showItemInfo('Item 8')"></div>
+      </div>
+      <div class="slot">
+        <img class="item-img" src="" alt="">
+        <div class="overlay" onclick="showItemInfo('Item 9')"></div>
+      </div>
+      <div class="slot">
+        <img class="item-img" src="" alt="">
+        <div class="overlay" onclick="showItemInfo('Item 10')"></div>
+      </div>
+    </div>
+    <hr>
+    <div class="slots">
+      <!-- Second row -->
+      <div class="slot">
+        <img class="item-img" src="" alt="">
+        <div class="overlay" onclick="showItemInfo('Item 11')"></div>
+      </div>
+      <div class="slot">
+        <img class="item-img" src="" alt="">
+        <div class="overlay" onclick="showItemInfo('Item 12')"></div>
+      </div>
+      <div class="slot">
+        <img class="item-img" src="" alt="">
+        <div class="overlay" onclick="showItemInfo('Item 13')"></div>
+      </div>
+      <div class="slot">
+        <img class="item-img" src="" alt="">
+        <div class="overlay" onclick="showItemInfo('Item 14')"></div>
+      </div>
+      <div class="slot">
+        <img class="item-img" src="" alt="">
+        <div class="overlay" onclick="showItemInfo('Item 15')"></div>
+      </div>
+      <div class="slot">
+        <img class="item-img" src="" alt="">
+        <div class="overlay" onclick="showItemInfo('Item 16')"></div>
+      </div>
+      <div class="slot">
+        <img class="item-img" src="" alt="">
+        <div class="overlay" onclick="showItemInfo('Item 17')"></div>
+      </div>
+      <div class="slot">
+        <img class="item-img" src="" alt="">
+        <div class="overlay" onclick="showItemInfo('Item 18')"></div>
+      </div>
+      <div class="slot">
+        <img class="item-img" src="" alt="">
+        <div class="overlay" onclick="showItemInfo('Item 19')"></div>
+      </div>
+      <div class="slot">
+        <img class="item-img" src="" alt="">
+        <div class="overlay" onclick="showItemInfo('Item 20')"></div>
+      </div>
+    </div>
+    <hr>
+    <div class="slots">
+      <div class="slot">
+        <img class="item-img" src="" alt="">
+        <div class="overlay" onclick="showItemInfo('Item 21')"></div>
+      </div>
+      <div class="slot">
+        <img class="item-img" src="" alt="">
+        <div class="overlay" onclick="showItemInfo('Item 22')"></div>
+      </div>
+      <div class="slot">
+        <img class="item-img" src="" alt="">
+        <div class="overlay" onclick="showItemInfo('Item 23')"></div>
+      </div>
+      <div class="slot">
+        <img class="item-img" src="" alt="">
+        <div class="overlay" onclick="showItemInfo('Item 24')"></div>
+      </div>
+      <div class="slot">
+        <img class="item-img" src="" alt="">
+        <div class="overlay" onclick="showItemInfo('Item 25')"></div>
+      </div>
+      <div class="slot">
+        <img class="item-img" src="" alt="">
+        <div class="overlay" onclick="showItemInfo('Item 26')"></div>
+      </div>
+      <div class="slot">
+        <img class="item-img" src="" alt="">
+        <div class="overlay" onclick="showItemInfo('Item 27')"></div>
+      </div>
+      <div class="slot">
+        <img class="item-img" src="" alt="">
+        <div class="overlay" onclick="showItemInfo('Item 28')"></div>
+      </div>
+      <div class="slot">
+        <img class="item-img" src="" alt="">
+        <div class="overlay" onclick="showItemInfo('Item 29')"></div>
+      </div>
+      <div class="slot">
+        <img class="item-img" src="" alt="">
+        <div class="overlay" onclick="showItemInfo('Item 30')"></div>
+      </div>
+    </div>
+    <hr>
+    <div class="slots">
+      <div class="slot">
+        <img class="item-img" src="" alt="">
+        <div class="overlay" onclick="showItemInfo('Item 31')"></div>
+      </div>
+      <div class="slot">
+        <img class="item-img" src="" alt="">
+        <div class="overlay" onclick="showItemInfo('Item 32')"></div>
+      </div>
+      <div class="slot">
+        <img class="item-img" src="" alt="">
+        <div class="overlay" onclick="showItemInfo('Item 33')"></div>
+      </div>
+      <div class="slot">
+        <img class="item-img" src="" alt="">
+        <div class="overlay" onclick="showItemInfo('Item 34')"></div>
+      </div>
+      <div class="slot">
+        <img class="item-img" src="" alt="">
+        <div class="overlay" onclick="showItemInfo('Item 35')"></div>
+      </div>
+      <div class="slot">
+        <img class="item-img" src="" alt="">
+        <div class="overlay" onclick="showItemInfo('Item 36')"></div>
+      </div>
+      <div class="slot">
+        <img class="item-img" src="" alt="">
+        <div class="overlay" onclick="showItemInfo('Item 37')"></div>
+      </div>
+      <div class="slot">
+        <img class="item-img" src="" alt="">
+        <div class="overlay" onclick="showItemInfo('Item 38')"></div>
+      </div>
+      <div class="slot">
+        <img class="item-img" src="" alt="">
+        <div class="overlay" onclick="showItemInfo('Item 39')"></div>
+      </div>
+      <div class="slot">
+        <img class="item-img" src="" alt="">
+        <div class="overlay" onclick="showItemInfo('Item 40')"></div>
+      </div>
+    </div>
+  </form>
+</div>
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div id="item-info"></div>
+  </div>
+</div>
+
+<script src="catalog.js" defer></script>
+<script src="balance.js" defer></script>
+
+</body>
+</html>
