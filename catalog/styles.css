@@ -202,6 +202,7 @@ hr {
 
 #newBalance {
   margin: 5px 0 5px 0;
+  max-width: fit-content;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
