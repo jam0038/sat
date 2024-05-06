@@ -80,22 +80,37 @@ function showCart() {
 
   container.innerHTML = "";
 
+  const items_con = document.createElement("div");
+  container.appendChild(items_con);
+
   const items = get_items_cart();
 
   let p_itms = [];
   items.forEach((i) => {
-      if (p_itms.includes(i)) {
-      }
-      // const slot = document.createElement("div");
-      // const img = document.createElement("img");
-      // img.setAttribute("src", "");
-      // slot.appendChild(img);
+      if (p_itms.includes(i)) return;
       const slot = document.createElement("p");
-      slot.accessKey = i.name;
-      slot.innerText = i.name + " - $" + i.price;
+      slot.id = "cart-" + i.name;
 
-      container.appendChild(slot);
+      const amt = items.filter((_i) => _i.name == i.name).length;
+
+      slot.innerText =
+          i.name + " - $" + i.price + (amt > 0 ? ` (${amt}x)` : "");
+
+      items_con.appendChild(slot);
+
+      p_itms.push(i);
   });
+
+  container.appendChild(document.createElement("hr"));
+
+  const total = items
+      .map((i) => parseFloat(i.price))
+      .reduce((a, b) => a + b, 0);
+
+  const tot_p = document.createElement("h3");
+  tot_p.innerText = `Total: $${total}`;
+
+  container.appendChild(tot_p);
 
   modal.style.display = "block";
 }
