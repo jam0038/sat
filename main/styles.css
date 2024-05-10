@@ -111,7 +111,7 @@ button  {
 }
 
 .homepage {
-  max-width: 35%;
-  max-height: 35%;
+  max-width: 40%;
+  max-height: 50vh;
   padding: 5px;
 }
