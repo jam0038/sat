@@ -1,0 +1,227 @@
+/* General body styling. Made by Mohammad */
+body {
+  margin: 0; /* Remove default margin. Made by Mohammad */
+  padding: 0; /* Remove default padding. Made by Mohammad */
+  font-family: Arial, sans-serif; /* Set font family. Made by Mohammad */
+  background: linear-gradient(to bottom right, #c6fbff, #68d4cf, #70d3ec, #1dcaff, #a5f1ff, #91f3fa); /* Gradient background. Made by Mohammad */
+  animation: rainbow 20s infinite linear; /* Animation for background gradient. Made by Mohammad */
+  min-width: 75%; /* Minimum width of the body. Made by Mohammad */
+}
+
+/* Styling for the main form frame. Made by Mohammad */
+.frame-form {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background. Made by Mohammad */
+  padding: 40px; /* Padding inside the form. Made by Mohammad */
+  border-radius: 10px; /* Rounded corners. Made by Mohammad */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Shadow around the form. Made by Mohammad */
+  transition: all 0.3s ease; /* Smooth transition for changes. Made by Mohammad */
+  margin: 0 auto; /* Center the form horizontally. Made by Mohammad */
+  width: 80%; /* Width of the form. Made by Mohammad */
+  max-width: 1400px; /* Maximum width of the form. Made by Mohammad */
+}
+
+/* Container for centering the form vertically and horizontally. Made by Mohammad */
+.frame-container {
+  display: flex; /* Use flexbox layout. Made by Mohammad */
+  justify-content: center; /* Center items horizontally. Made by Mohammad */
+  align-items: center; /* Center items vertically. Made by Mohammad */
+  min-height: 100vh; /* Minimum height to fill viewport height. Made by Mohammad */
+}
+
+/* Hover effect for the form. Made by Mohammad */
+.frame-form:hover {
+  transform: translate(0); /* Reset transform on hover. Made by Mohammad */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover. Made by Mohammad */
+  transition: box-shadow 0.3s ease; /* Smooth transition for shadow change. Made by Mohammad */
+}
+
+/* Extra frame styling, positioned at the bottom right. Made by Mohammad */
+.extra-frame {
+  position: absolute; /* Absolute positioning. Made by Mohammad */
+  bottom: 10px; /* Distance from the bottom. Made by Mohammad */
+  right: 10px; /* Distance from the right. Made by Mohammad */
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background. Made by Mohammad */
+  padding: 5px 10px; /* Padding inside the extra frame. Made by Mohammad */
+  border-radius: 5px; /* Rounded corners. Made by Mohammad */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Shadow around the extra frame. Made by Mohammad */
+  font-size: 12px; /* Font size for text inside the extra frame. Made by Mohammad */
+}
+
+/* Styling for horizontal rules. Made by Mohammad */
+hr {
+  border: none; /* Remove default border. Made by Mohammad */
+  height: 2px; /* Height of the horizontal rule. Made by Mohammad */
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)); /* Gradient background. Made by Mohammad */
+  margin: 20px 0; /* Margin above and below the horizontal rule. Made by Mohammad */
+}
+
+/* Styling for slots container. Made by Mohammad */
+.slots {
+  display: flex; /* Use flexbox layout. Made by Mohammad */
+  flex-wrap: wrap; /* Allow items to wrap to the next line. Made by Mohammad */
+  justify-content: center; /* Center items horizontally. Made by Mohammad */
+  padding: 0 20px; /* Padding on the left and right. Made by Mohammad */
+  gap: 20px; /* Space between items. Made by Mohammad */
+}
+
+/* Styling for each slot item. Made by Mohammad */
+.slot {
+  display: flex; /* Use flexbox layout. Made by Mohammad */
+  justify-content: center; /* Center content horizontally. Made by Mohammad */
+  align-items: center; /* Center content vertically. Made by Mohammad */
+  position: relative; /* Relative positioning for child elements. Made by Mohammad */
+  flex: 0 0 calc(10% - 20px); /* Flex basis with space adjustment. Made by Mohammad */
+  background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white background. Made by Mohammad */
+  height: 120px; /* Height of the slot. Made by Mohammad */
+  border-radius: 15px; /* Rounded corners. Made by Mohammad */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow around the slot. Made by Mohammad */
+  cursor: pointer; /* Pointer cursor on hover. Made by Mohammad */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow. Made by Mohammad */
+}
+
+/* Hover effect for slots. Made by Mohammad */
+.slot:hover {
+  transform: translateY(-15px); /* Move slot up on hover. Made by Mohammad */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover. Made by Mohammad */
+}
+
+/* Overlay styling for slots. Made by Mohammad */
+.overlay {
+  position: absolute; /* Absolute positioning. Made by Mohammad */
+  top: 0; /* Align to the top. Made by Mohammad */
+  left: 0; /* Align to the left. Made by Mohammad */
+  width: 100%; /* Full width. Made by Mohammad */
+  height: 100%; /* Full height. Made by Mohammad */
+  cursor: pointer; /* Pointer cursor on hover. Made by Mohammad */
+  z-index: 1; /* Ensure overlay is on top. Made by Mohammad */
+}
+
+/* Styling for item images inside slots. Made by Mohammad */
+.item-img {
+  max-width: 80%; /* Maximum width of the image. Made by Mohammad */
+  max-height: 80%; /* Maximum height of the image. Made by Mohammad */
+  display: block; /* Block display. Made by Mohammad */
+  margin: auto; /* Center horizontally. Made by Mohammad */
+  padding: 10%; /* Padding around the image. Made by Mohammad */
+  position: absolute; /* Absolute positioning. Made by Mohammad */
+  top: 0; /* Align to the top. Made by Mohammad */
+  bottom: 0; /* Align to the bottom. Made by Mohammad */
+  left: 0; /* Align to the left. Made by Mohammad */
+  right: 0; /* Align to the right. Made by Mohammad */
+}
+
+/* Modal styling. Made by Mohammad */
+.modal {
+  display: none; /* Hidden by default. Made by Mohammad */
+  position: fixed; /* Fixed positioning. Made by Mohammad */
+  z-index: 999; /* Ensure modal is on top. Made by Mohammad */
+  left: 0; /* Align to the left. Made by Mohammad */
+  top: 0; /* Align to the top. Made by Mohammad */
+  width: 100%; /* Full width. Made by Mohammad */
+  height: 100%; /* Full height. Made by Mohammad */
+  overflow: auto; /* Scroll if needed. Made by Mohammad */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background. Made by Mohammad */
+}
+
+/* Content inside the modal. Made by Mohammad */
+.modal-content {
+  background-color: #fefefe; /* White background. Made by Mohammad */
+  margin: 15% auto; /* Center modal vertically and horizontally. Made by Mohammad */
+  padding: 20px; /* Padding inside the modal. Made by Mohammad */
+  border: 1px solid #888; /* Border around the modal. Made by Mohammad */
+  width: 80%; /* Width of the modal. Made by Mohammad */
+  border-radius: 10px; /* Rounded corners. Made by Mohammad */
+}
+
+/* Close button styling inside the modal. Made by Mohammad */
+.close {
+  color: #aaa; /* Light gray color for the close button. Made by Mohammad */
+  float: right; /* Align close button to the right. Made by Mohammad */
+  font-size: 28px; /* Font size for the close button. Made by Mohammad */
+  font-weight: bold; /* Bold font weight for the close button. Made by Mohammad */
+}
+
+/* Hover and focus effect for the close button. Made by Mohammad */
+.close:hover,
+.close:focus {
+  color: black; /* Change color on hover/focus. Made by Mohammad */
+  text-decoration: none; /* Remove underline. Made by Mohammad */
+  cursor: pointer; /* Pointer cursor on hover/focus. Made by Mohammad */
+}
+
+/* Styling for header form. Made by Mohammad */
+.header-form {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background. Made by Mohammad */
+  border-radius: 10px; /* Rounded corners. Made by Mohammad */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Shadow around the header form. Made by Mohammad */
+  transition: all 0.3s ease; /* Smooth transition for changes. Made by Mohammad */
+  width: 80%; /* Width of the header form. Made by Mohammad */
+  max-width: 180px; /* Maximum width of the header form. Made by Mohammad */
+  max-height: 200px; /* Maximum height of the header form. Made by Mohammad */
+  padding: 5px; /* Padding inside the header form. Made by Mohammad */
+  margin: 1.5vh 1.5vh 1.5vh auto; /* Margin around the header form. Made by Mohammad */
+  position: absolute; /* Absolute positioning. Made by Mohammad */
+  right: 10px; /* Distance from the right. Made by Mohammad */
+}
+
+/* Hover effect for the header form. Made by Mohammad */
+.header-form:hover {
+  transform: translate(0); /* Reset transform on hover. Made by Mohammad */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover. Made by Mohammad */
+  transition: box-shadow 0.3s ease; /* Smooth transition for shadow change. Made by Mohammad */
+}
+
+/* Button styling for item info. Made by Mohammad */
+#item-info button {
+  padding: 10px; /* Padding inside the button. Made by Mohammad */
+  margin-top: 10px; /* Margin above the button. Made by Mohammad */
+  background-color: #2d94f5; /* Blue background color. Made by Mohammad */
+  color: white; /* White text color. Made by Mohammad */
+  border: none; /* Remove default border. Made by Mohammad */
+  border-radius: 5px; /* Rounded corners. Made by Mohammad */
+  cursor: pointer; /* Pointer cursor on hover. Made by Mohammad */
+  transition: background-color 0.3s ease; /* Smooth transition for background color change. Made by Mohammad */
+  animation: greenGradient 5s infinite alternate; /* Animation for button. Made by Mohammad */
+}
+
+/* Disabled button styling for item info. Made by Mohammad */
+#item-info button:disabled {
+  padding: 10px; /* Padding inside the button. Made by Mohammad */
+  margin-top: 10px; /* Margin above the button. Made by Mohammad */
+  background-color: #f52d2d; /* Red background color for disabled state. Made by Mohammad */
+  color: white; /* White text color. Made by Mohammad */
+  border: none; /* Remove default border. Made by Mohammad */
+  border-radius: 5px; /* Rounded corners. Made by Mohammad */
+  cursor: pointer; /* Pointer cursor on hover. Made by Mohammad */
+  transition: background-color 0.3s ease; /* Smooth transition for background color change. Made by Mohammad */
+  animation: greenGradient 5s infinite alternate; /* Animation for button. Made by Mohammad */
+}
+
+/* Cart button styling. Made by Mohammad */
+.cart_button {
+  padding: 4.5px; /* Padding inside the button. Made by Mohammad */
+  margin-top: 4.5px; /* Margin above the button. Made by Mohammad */
+  background-color: #2d94f5; /* Blue background color. Made by Mohammad */
+  color: white; /* White text color. Made by Mohammad */
+  border: none; /* Remove default border. Made by Mohammad */
+  border-radius: 4px; /* Rounded corners. Made by Mohammad */
+  cursor: pointer; /* Pointer cursor on hover. Made by Mohammad */
+  transition: background-color 0.3s ease; /* Smooth transition for background color change. Made by Mohammad */
+  animation: greenGradient 5s infinite alternate; /* Animation for button. Made by Mohammad */
+}
+
+/* Styling for the new balance display. Made by Mohammad */
+#newBalance {
+  margin: 5px 0; /* Margin above and below the element. Made by Mohammad */
+  max-width: fit-content; /* Fit content width. Made by Mohammad */
+  border: 1px solid #ccc; /* Border around the element. Made by Mohammad */
+  border-radius: 5px; /* Rounded corners. Made by Mohammad */
+  max-width: 75%; /* Maximum width of the element. Made by Mohammad */
+}
+
+/* Admin tool styling. Made by Mohammad */
+#admin-tool {
+  color: red; /* Red text color. Made by Mohammad */
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /* Font family for the admin tool. Made by Mohammad */
+  font-weight: bold; /* Bold font weight. Made by Mohammad */
+}

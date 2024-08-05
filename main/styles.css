@@ -1,117 +1,128 @@
+/* Basic styling for the body element. Made by Mohammad */
 body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(to bottom right, #c6fbff, #68d4cf, #70d3ec, #1dcaff, #a5f1ff, #91f3fa);
-  animation: rainbow 20s infinite linear;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  font-family: Arial, sans-serif; /* Set font family */
+  background: linear-gradient(to bottom right, #c6fbff, #68d4cf, #70d3ec, #1dcaff, #a5f1ff, #91f3fa); /* Background gradient effect */
+  animation: rainbow 20s infinite linear; /* Animation for background gradient. Made by Mohammad */
 }
 
+/* Keyframes for the green gradient animation. Made by Mohammad */
 @keyframes greenGradient {
-  0% { background-color: #00e1ff; } 
-  100% { background-color: #00b3fa; } 
+  0% { background-color: #00e1ff; } /* Start color */
+  100% { background-color: #00b3fa; } /* End color */
 }
 
-
+/* Styling for the login form. Made by Mohammad */
 .login-form {
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
-  margin-bottom: 50px; 
-  max-width: 600px;
-  max-height: 80vh; 
-  overflow-y: auto; 
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  padding: 40px; /* Padding around the form */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow around the form */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  margin-bottom: 50px; /* Margin below the form */
+  max-width: 600px; /* Maximum width of the form */
+  max-height: 80vh; /* Maximum height of the form */
+  overflow-y: auto; /* Scrollbar for overflow content */
 }
 
+/* Container for the login form. Made by Mohammad */
 .login-container {
-  position: relative; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  text-align: center;
+  position: relative; /* Positioning context for absolutely positioned elements */
+  display: flex; /* Flexbox layout */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+  text-align: center; /* Center text */
 }
 
-
+/* Hover effect for the login form. Made by Mohammad */
 .login-form:hover {
-  transform: translate(0);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
-  transition: box-shadow 0.3s ease; 
+  transform: translate(0); /* No transformation on hover */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
+  transition: box-shadow 0.3s ease; /* Smooth transition for shadow */
 }
 
-h3,h1 {
-  text-align: center;
-  color: #333;
+/* Styling for headings h3 and h1. Made by Mohammad */
+h3, h1 {
+  text-align: center; /* Center text alignment */
+  color: #333; /* Dark text color */
 }
 
+/* Styling for text and password input fields. Made by Mohammad */
 input[type="text"],
 input[type="password"] {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  width: 100%; /* Full width of the parent element */
+  padding: 10px; /* Padding inside the input fields */
+  margin: 10px 0; /* Margin around the input fields */
+  border: 1px solid #ccc; /* Border color and style */
+  border-radius: 5px; /* Rounded corners */
 }
 
-button[type="submit"]  {
-  width: 100%;
-  padding: 10px;
-  margin-top: 10px;
-  background-color: #0084ff; 
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  animation: greenGradient 5s infinite alternate; 
+/* Styling for the submit button. Made by Mohammad */
+button[type="submit"] {
+  width: 100%; /* Full width of the parent element */
+  padding: 10px; /* Padding inside the button */
+  margin-top: 10px; /* Margin on top of the button */
+  background-color: #0084ff; /* Background color of the button */
+  color: white; /* Text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+  animation: greenGradient 5s infinite alternate; /* Animation for background color */
 }
 
+/* Hover effect for the submit button. Made by Mohammad */
 button[type="submit"]:hover {
-  animation-play-state: paused; 
+  animation-play-state: paused; /* Pause animation on hover */
 }
 
+/* Styling for the extra-frame element. Made by Mohammad */
 .extra-frame {
-  position: absolute;
-  bottom: 10px; 
-  right: 10px; 
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 5px 10px;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  font-size: 12px;
+  position: absolute; /* Absolute positioning */
+  bottom: 10px; /* Position from the bottom */
+  right: 10px; /* Position from the right */
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  padding: 5px 10px; /* Padding inside the extra-frame */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Shadow around the extra-frame */
+  font-size: 12px; /* Font size */
 }
 
+/* Styling for horizontal rule. Made by Mohammad */
 hr {
-  border: none;
-  height: 2px;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)); 
-  margin: 20px 0;
+  border: none; /* No border */
+  height: 2px; /* Height of the line */
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)); /* Gradient effect */
+  margin: 20px 0; /* Margin around the line */
 }
 
+/* Styling for images. Made by Mohammad */
 img {
-  max-width: 100%; 
-  max-height: 100%; 
-  padding: 10px; 
-  box-sizing: border-box;
+  max-width: 100%; /* Maximum width */
+  max-height: 100%; /* Maximum height */
+  padding: 10px; /* Padding around images */
+  box-sizing: border-box; /* Include padding in width and height */
 }
 
-button  {
-  width: 50%;
-  padding: 10px;
-  margin-top: 10px;
-  background-color: #ffffff; 
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  animation: greenGradient 5s infinite alternate;
-
+/* Styling for generic buttons. Made by Mohammad */
+button {
+  width: 50%; /* Width of the button */
+  padding: 10px; /* Padding inside the button */
+  margin-top: 10px; /* Margin on top of the button */
+  background-color: #ffffff; /* Background color of the button */
+  color: white; /* Text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+  animation: greenGradient 5s infinite alternate; /* Animation for background color */
 }
 
+/* Styling for homepage class images. Made by Mohammad */
 .homepage {
-  max-width: 50%;
-  max-height: 50%;
-  padding: 5px;
+  max-width: 50%; /* Maximum width of the image */
+  max-height: 50%; /* Maximum height of the image */
+  padding: 5px; /* Padding around images */
 }
