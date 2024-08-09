@@ -7,7 +7,7 @@ function validateLogin() {
   if (username === "admin" && password === "2011") {
       // Check if username and password match // Made by Mohammad
       // Redirect to another page // Made by Mohammad
-      window.location.href = "/catalog_admin00000000000/index.html"; // Made by Mohammad
+      window.location.href = "/catalog_admin/index.html"; // Made by Mohammad
   } else {
       message = "Wrong username or password. Please try again."; // Set error message if username or password is incorrect // Made by Mohammad
   }
