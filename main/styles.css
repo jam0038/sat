@@ -34,6 +34,7 @@ body {
   align-items: center; /* Center vertically */
   height: 100vh; /* Full viewport height */
   text-align: center; /* Center text */
+  margin: 3rem auto;
 }
 
 /* Hover effect for the login form. Made by Mohammad */

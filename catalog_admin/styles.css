@@ -26,6 +26,7 @@ body {
   justify-content: center; /* Center items horizontally. Made by Mohammad */
   align-items: center; /* Center items vertically. Made by Mohammad */
   min-height: 100vh; /* Minimum height to fill viewport height. Made by Mohammad */
+  margin: 3rem auto;
 }
 
 /* Hover effect for the form. Made by Mohammad */
